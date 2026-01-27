@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Cutrono - Tech & Blue Economy Newsletter</title>
+    <meta name="description"
+        content="Iscriviti alla newsletter di Luca Cutrono per rimanere aggiornato su Tech, Startup, Blue Economy e Strategia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+    <!-- Mobile Navbar (Sticky Top) - Only visible on Mobile/Tablet -->
+    <nav class="mobile-navbar">
+        <div class="mobile-logo">LC</div>
+        <div class="mobile-subscribe">
+            <input type="email" id="mobileEmail" placeholder="Email..." />
+            <button id="mobileSubmit">Join</button>
+        </div>
+    </nav>
+
+    <div class="split-layout">
+        <!-- LEFT COLUMN (2/3) - Content -->
+        <main class="content-area">
+            <!-- Header (Internal) -->
+            <header class="content-header">
+                <div class="brand-name">Luca Cutrono</div>
+                <nav class="mini-nav">
+                    <a href="#topics">Topics</a>
+                    <a href="https://lucacutrono.substack.com/archive" target="_blank">Archive</a>
+                </nav>
+            </header>
+
+            <!-- Hero Text -->
+            <section class="hero-text-section">
+                <div class="hero-eyebrow">
+                    <span>// Innovazione • Strategia • Futuro</span>
+                </div>
+                <h1 class="hero-headline">
+                    Il Futuro <br>
+                    <span class="highlight">non aspetta.</span>
+                </h1>
+                <p class="hero-subline">
+                    Ogni settimana, insight radicali su tecnologia emergente,
+                    blue economy e strategie di business.
+                    Prima che diventino mainstream.
+                </p>
+
+                <!-- Stats/Tags -->
+                <div class="tags-row">
+                    <span class="tag">Zero Fluff</span>
+                    <span class="tag">Deep Dives</span>
+                    <span class="tag">Weekly</span>
+                </div>
+            </section>
+
+            <!-- Topics Grid -->
+            <section class="topics-section" id="topics">
+                <div class="section-label">Topics</div>
+
+                <div class="bento-grid">
+                    <!-- 1. Tech -->
+                    <div class="bento-card" id="card-tech">
+                        <!-- Top: Title -->
+                        <div class="card-header-center">
+                            <span class="card-idx">01</span>
+                            <h3 class="card-title">Tech</h3>
+                        </div>
+
+                        <!-- Center: Large Icon -->
+                        <div class="icon-wrapper-center">
+                            <svg viewBox="0 0 64 64" fill="none" class="topic-icon icon-tech">
+                                <rect x="16" y="16" width="32" height="32" rx="4" stroke="currentColor"
+                                    stroke-width="2" />
+                                <rect x="24" y="24" width="16" height="16" fill="currentColor" opacity="0.5"
+                                    class="chip-core" />
+                                <line x1="32" y1="16" x2="32" y2="8" stroke="currentColor" stroke-width="2"
+                                    class="circuit-line" />
+                                <line x1="32" y1="48" x2="32" y2="56" stroke="currentColor" stroke-width="2"
+                                    class="circuit-line" />
+                                <line x1="16" y1="32" x2="8" y2="32" stroke="currentColor" stroke-width="2"
+                                    class="circuit-line" />
+                                <line x1="48" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="2"
+                                    class="circuit-line" />
+                                <circle cx="32" cy="4" r="2" fill="currentColor" class="node" />
+                                <circle cx="32" cy="60" r="2" fill="currentColor" class="node" />
+                                <circle cx="4" cy="32" r="2" fill="currentColor" class="node" />
+                                <circle cx="60" cy="32" r="2" fill="currentColor" class="node" />
+                            </svg>
+                        </div>
+
+                        <!-- Bottom: Description -->
+                        <p class="card-desc">L'evoluzione dell'hardware e il futuro del computing quantistico.</p>
+                    </div>
+
+                    <!-- 2. AI -->
+                    <div class="bento-card" id="card-ai">
+                        <div class="card-header-center">
+                            <span class="card-idx">02</span>
+                            <h3 class="card-title">AI</h3>
+                        </div>
+                        <div class="icon-wrapper-center">
+                            <svg viewBox="0 0 64 64" fill="none" class="topic-icon icon-ai">
+                                <path
+                                    d="M32 12C20 12 12 20 12 32C12 44 20 52 32 52C44 52 52 44 52 32C52 20 44 12 32 12Z"
+                                    stroke="currentColor" stroke-width="2" opacity="0.3" />
+                                <circle cx="32" cy="24" r="3" fill="currentColor" class="ai-node n1" />
+                                <circle cx="20" cy="32" r="3" fill="currentColor" class="ai-node n2" />
+                                <circle cx="44" cy="32" r="3" fill="currentColor" class="ai-node n3" />
+                                <circle cx="26" cy="42" r="3" fill="currentColor" class="ai-node n4" />
+                                <circle cx="38" cy="42" r="3" fill="currentColor" class="ai-node n5" />
+                                <line x1="32" y1="24" x2="20" y2="32" stroke="currentColor" stroke-width="1"
+                                    opacity="0.5" />
+                                <line x1="32" y1="24" x2="44" y2="32" stroke="currentColor" stroke-width="1"
+                                    opacity="0.5" />
+                                <line x1="20" y1="32" x2="26" y2="42" stroke="currentColor" stroke-width="1"
+                                    opacity="0.5" />
+                                <line x1="44" y1="32" x2="38" y2="42" stroke="currentColor" stroke-width="1"
+                                    opacity="0.5" />
+                                <line x1="26" y1="42" x2="38" y2="42" stroke="currentColor" stroke-width="1"
+                                    opacity="0.5" />
+                            </svg>
+                        </div>
+                        <p class="card-desc">Agenti autonomi, LLM e le nuove frontiere dell'intelligenza sintetica.</p>
+                    </div>
+
+                    <!-- 3. Startup -->
+                    <div class="bento-card" id="card-startup">
+                        <div class="card-header-center">
+                            <span class="card-idx">03</span>
+                            <h3 class="card-title">Startup</h3>
+                        </div>
+                        <div class="icon-wrapper-center">
+                            <svg viewBox="0 0 64 64" fill="none" class="topic-icon icon-startup">
+                                <g class="rocket-body">
+                                    <path d="M32 8C32 8 20 28 20 40H44C44 28 32 8 32 8Z" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <rect x="28" y="24" width="8" height="8" rx="4" fill="currentColor" opacity="0.5" />
+                                    <path d="M20 40L12 48" stroke="currentColor" stroke-width="2" />
+                                    <path d="M44 40L52 48" stroke="currentColor" stroke-width="2" />
+                                </g>
+                                <g class="rocket-fire">
+                                    <path d="M28 44L32 56L36 44" fill="currentColor" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p class="card-desc">Analisi di unicorni, modelli di crescita e venture capital.</p>
+                    </div>
+
+                    <!-- 4. Design -->
+                    <div class="bento-card" id="card-design">
+                        <div class="card-header-center">
+                            <span class="card-idx">04</span>
+                            <h3 class="card-title">Design</h3>
+                        </div>
+                        <div class="icon-wrapper-center">
+                            <svg viewBox="0 0 64 64" fill="none" class="topic-icon icon-design">
+                                <rect x="12" y="12" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                    class="shape s1" />
+                                <circle cx="42" cy="22" r="10" stroke="currentColor" stroke-width="2"
+                                    class="shape s2" />
+                                <path d="M12 48L22 36L32 48H12Z" stroke="currentColor" stroke-width="2"
+                                    class="shape s3" />
+                            </svg>
+                        </div>
+                        <p class="card-desc">minimalismo radicale, UX/UI e l'estetica del software moderno.</p>
+                    </div>
+
+                    <!-- 5. Robotica (Waving Robot) -->
+                    <div class="bento-card" id="card-robot">
+                        <div class="card-header-center">
+                            <span class="card-idx">05</span>
+                            <h3 class="card-title">Robotica</h3>
+                        </div>
+                        <div class="icon-wrapper-center">
+                            <svg viewBox="0 0 64 64" fill="none" class="topic-icon icon-robot">
+                                <rect x="20" y="32" width="24" height="20" rx="4" stroke="currentColor"
+                                    stroke-width="2" />
+                                <g class="robot-head">
+                                    <rect x="22" y="12" width="20" height="16" rx="4" stroke="currentColor"
+                                        stroke-width="2" fill="#0A0A0A" />
+                                    <circle cx="28" cy="20" r="2" fill="currentColor" />
+                                    <circle cx="36" cy="20" r="2" fill="currentColor" />
+                                    <line x1="32" y1="12" x2="32" y2="8" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="32" cy="6" r="2" fill="currentColor" class="robot-antenna" />
+                                </g>
+                                <g class="robot-arm-left" style="transform-origin: 16px 36px;">
+                                    <path d="M20 36L12 36L12 24" stroke="currentColor" stroke-width="2"
+                                        class="arm-path" />
+                                    <circle cx="12" cy="22" r="3" fill="currentColor" />
+                                </g>
+                                <path d="M44 36L52 36L52 44" stroke="currentColor" stroke-width="2" opacity="0.6" />
+                            </svg>
+                        </div>
+                        <p class="card-desc">Automazione industriale, robotica umanoide e intelligenza incarnata.</p>
+                    </div>
+
+                    <!-- 6. Innovazione -->
+                    <div class="bento-card" id="card-innovation">
+                        <div class="card-header-center">
+                            <span class="card-idx">06</span>
+                            <h3 class="card-title">Innovazione</h3>
+                        </div>
+                        <div class="icon-wrapper-center">
+                            <svg viewBox="0 0 64 64" fill="none" class="topic-icon icon-innovation">
+                                <path d="M32 56V48" stroke="currentColor" stroke-width="2" />
+                                <path d="M32 8C24 8 18 14 18 24C18 30 24 34 24 38H40C40 34 46 30 46 24C46 14 40 8 32 8Z"
+                                    stroke="currentColor" stroke-width="2" class="bulb-glass" />
+                                <path d="M28 42H36" stroke="currentColor" stroke-width="2" />
+                                <path d="M28 46H36" stroke="currentColor" stroke-width="2" />
+                                <g class="bulb-rays" opacity="0">
+                                    <line x1="10" y1="24" x2="4" y2="24" stroke="currentColor" stroke-width="2" />
+                                    <line x1="54" y1="24" x2="60" y2="24" stroke="currentColor" stroke-width="2" />
+                                    <line x1="16" y1="10" x2="12" y2="6" stroke="currentColor" stroke-width="2" />
+                                    <line x1="48" y1="10" x2="52" y2="6" stroke="currentColor" stroke-width="2" />
+                                    <line x1="32" y1="4" x2="32" y2="1" stroke="currentColor" stroke-width="2" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p class="card-desc">Trend emergenti, disgiunzioni di mercato e segnali deboli.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer (Internal to Left Col) -->
+            <footer class="main-footer" id="mainFooter">
+                <div class="footer-cols">
+                    <div class="f-col">
+                        <h4>Navigazione</h4>
+                        <a href="#topics">Topics</a>
+                        <a href="#">About</a>
+                        <a href="mailto:lucacutrono06@gmail.com">Contatti</a>
+                    </div>
+                    <div class="f-col">
+                        <h4>Social</h4>
+                        <a href="https://www.linkedin.com/in/luca-cutrono-710359285/" target="_blank">LinkedIn</a>
+                        <a href="mailto:lucacutrono06@gmail.com">Email</a>
+                    </div>
+                    <div class="f-col">
+                        <h4>Legale</h4>
+                        <a href="privacy.html">Privacy</a>
+                        <a href="cookie.html">Cookie</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    © 2026 Luca Cutrono. All rights reserved.
+                </div>
+            </footer>
+        </main>
+
+        <!-- RIGHT COLUMN (1/3) - Sticky Sidebar -->
+        <aside class="sidebar-area">
+            <div class="sidebar-bg"></div> <!-- Photo Overlay -->
+
+            <div class="sidebar-content">
+                <!-- Newsletter Form (Always Visual) -->
+                <div class="sidebar-widget newsletter-widget">
+                    <div class="widget-header">
+                        <h2 class="widget-title">Join the Club</h2>
+                        <p class="widget-desc">Iscriviti per ricevere l'analisi settimanale.</p>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="sidebarEmail" class="sidebar-input" placeholder="Email address" />
+                        <button id="sidebarSubmit" class="sidebar-submit">
+                            ISCRIVITI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Helper Links (Fade out when reaching footer) -->
+                <div class="sidebar-helpers" id="sidebarHelpers">
+                    <div class="helper-row">
+                        <a href="https://www.linkedin.com/in/luca-cutrono-710359285/" target="_blank">LinkedIn</a>
+                        <a href="mailto:lucacutrono06@gmail.com">Contatti</a>
+                    </div>
+                    <div class="helper-scroll-hint">
+                        SCROLLA PER ESPLORARE ↓
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-header">
+            <svg class="cookie-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bitten Cookie Shape (No Stroke, Biscuit Fill) -->
+                <path
+                    d="M14 2.5C10 2.5 6 4.5 5 9c-.5 2.5 1 5.5 3 7.5 2 2 5 3 8 3 3 0 5-2 5-5 0-1-.5-1.5-1-1.5-.5 0-1-.5-1-1s.5-1 0-1.5c-.5-.5-1 0-1.5-.5-.5-.5-.5-1.5-1-2-.5-.5 0-1.5-.5-2-.5-.5-1.5-.5-2-2.5Z"
+                    fill="#E0C097" />
+                <circle cx="9" cy="10" r="1.5" fill="#3D2618" />
+                <circle cx="12" cy="14" r="2" fill="#3D2618" />
+                <circle cx="15" cy="16" r="1.5" fill="#3D2618" />
+                <circle cx="7" cy="13" r="1.5" fill="#3D2618" />
+            </svg>
+            <h3 class="cookie-title">Biscotti?</h3>
+        </div>
+        <p class="cookie-text">
+            Questo sito utilizza cookie tecnici per garantire il funzionamento della piattaforma e migliorare
+            l'esperienza utente.
+            Per maggiori informazioni sul trattamento dei dati e l'uso dei cookie, consulta la nostra
+            <a href="cookie.html">Cookie Policy</a> completa.
+        </p>
+        <div class="cookie-actions">
+            <!-- Technical cookies only, so Reject acts as "Close/Default" which is effectively Accept Necessary -->
+            <button id="cookieReject" class="cookie-btn">Solo Essenziali</button>
+            <button id="cookieAccept" class="cookie-btn primary">Accetto Tutto</button>
+        </div>
+    </div>
+
+    <!-- Milk Scene Container -->
+    <div id="milkScene" class="milk-scene">
+        <div id="milkCup" class="milk-cup">
+            <!-- Steam (Behind everything mainly, or top) -->
+            <div class="steam-particle s1"></div>
+            <div class="steam-particle s2"></div>
+            <div class="steam-particle s3"></div>
+
+            <!-- 1. Back Layer (Rim & Inside) -->
+            <svg class="cup-layer back" viewBox="0 0 100 100" fill="none">
+                <!-- Inner Rim (Back part) -->
+                <path d="M20 20 H80 V30 H20 Z" fill="#333" />
+                <!-- Liquid surface (Milk) -->
+                <path d="M22 25 H78" stroke="white" stroke-width="6" stroke-linecap="round" />
+            </svg>
+
+            <!-- 2. The Actor Cookie (Sandwiched) -->
+            <div id="actorCookie" class="actor-cookie"></div>
+
+            <!-- 3. Front Layer (Body) -->
+            <svg class="cup-layer front" viewBox="0 0 100 100" fill="none">
+                <!-- Cup Body (Masks the cookie when it dips) -->
+                <path d="M20 20 H80 V70 C80 85 65 95 50 95 C35 95 20 85 20 70 Z" fill="black" stroke="white"
+                    stroke-width="4" />
+                <!-- Handle -->
+                <path d="M80 30 H90 C95 30 95 60 90 60 H80" stroke="white" stroke-width="4" fill="none" />
+                <!-- Front Rim Line to cover top of body -->
+                <line x1="20" y1="20" x2="80" y2="20" stroke="white" stroke-width="4" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
