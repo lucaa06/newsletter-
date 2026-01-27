@@ -217,71 +217,121 @@
         </section>
 
         <section>
-            <h2>2. Tipologie di Cookie Utilizzati da Questo Sito</h2>
+            <h2>1. Definizioni e Classificazione</h2>
             <p>
-                Il presente sito web utilizza <strong>esclusivamente cookie tecnici</strong>, necessari per garantire il
-                corretto funzionamento, la sicurezza e l'accessibilità della piattaforma.
-                Si dichiara formalmente che <strong>non viene fatto uso di cookie di profilazione</strong>, ovvero quei
-                cookie volti a creare profili relativi all'utente e utilizzati al fine di inviare messaggi pubblicitari
-                in linea con le preferenze manifestate dallo stesso nell'ambito della navigazione in rete.
+                I cookie e le tecnologie di tracciamento sono piccoli file di testo o marcatori software che i siti
+                visitati inviano al terminale dell'utente, dove vengono memorizzati per essere ritrasmessi agli stessi
+                siti alla visita successiva.
             </p>
-
-            <div class="legal-block">
-                <strong>NOTA BENE:</strong> La disattivazione dei cookie tecnici potrebbe compromettere l'utilizzo delle
-                funzionalità del sito web o impedirne la visualizzazione corretta. I cookie tecnici non richiedono il
-                preventivo consenso dell'utente ai sensi dell'art. 122 comma 1 del Codice della Privacy.
-            </div>
-
-            <h3>2.1 Dettaglio Tecnico dei Cookie Installati</h3>
             <p>
-                In ottemperanza al principio di trasparenza, si riporta di seguito la tabella analitica dei cookie
-                tecnici installati direttamente da questo dominio. L'utilizzo è strettamente limitato alla trasmissione
-                di identificativi di sessione (costituiti da numeri casuali generati dal server) necessari per
-                consentire l'esplorazione sicura ed efficiente del sito.
+                Questo sito utilizza una tecnologia specifica denominata <strong>Local Storage</strong> (Archiviazione
+                Locale) per memorizzare le preferenze di consenso dell'utente. A differenza dei cookie tradizionali,
+                questi dati non vengono inviati al server ad ogni richiesta, ma rimangono residenti sul dispositivo
+                dell'utente per garantire la funzionalità del banner.
             </p>
+        </section>
 
+        <section>
+            <h2>2. Tipologie di Strumenti Utilizzati</h2>
+
+            <h3>2.1 Strumenti Tecnici (Strettamente Necessari)</h3>
+            <p>
+                Questi strumenti sono indispensabili per il corretto funzionamento del sito web e per la gestione delle
+                preferenze dell'utente. Senza di essi, il sito web o alcune sue porzioni potrebbero non funzionare
+                correttamente.
+            </p>
             <div class="cookie-table-container">
+                <style>
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 1rem 0;
+                        font-size: 0.9rem;
+                        color: #ccc;
+                    }
+
+                    th,
+                    td {
+                        border: 1px solid var(--border);
+                        padding: 0.8rem;
+                        text-align: left;
+                    }
+
+                    th {
+                        background: rgba(255, 255, 255, 0.05);
+                        color: white;
+                    }
+
+                    code {
+                        background: rgba(127, 90, 240, 0.2);
+                        padding: 2px 5px;
+                        border-radius: 4px;
+                        font-family: 'JetBrains Mono', monospace;
+                        color: white;
+                    }
+                </style>
                 <table>
                     <thead>
                         <tr>
-                            <th>Denominazione Tecnica</th>
+                            <th>Nome Tecnico</th>
                             <th>Tipologia</th>
                             <th>Fornitore</th>
-                            <th>Finalità Specifica</th>
-                            <th>Tempo di Conservazione</th>
+                            <th>Finalità</th>
+                            <th>Durata</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><code>PHPSESSID</code> / <code>session_id</code></td>
-                            <td>Tecnico (Sessione)</td>
-                            <td>Proprietario (Prima Parte)</td>
-                            <td>Gestione della sessione di navigazione e identificazione univoca della connessione
-                                server-client. Indispensabile per mantenere lo stato dell'utente tra le pagine.</td>
-                            <td>Chiusura del Browser (Fine Sessione)</td>
-                        </tr>
-                        <tr>
-                            <td><code>cookieConsent</code> / <code>cookie_pref</code></td>
-                            <td>Tecnico (Persistente)</td>
-                            <td>Proprietario (Prima Parte)</td>
-                            <td>Memorizzazione della preferenza espressa dall'utente in merito all'accettazione (o
-                                rifiuto) dei cookie, al fine di non riproporre il banner informativo ad ogni visita
-                                successiva.</td>
-                            <td>12 Mesi</td>
-                        </tr>
-                        <tr>
-                            <td><code>csrf_token</code></td>
-                            <td>Tecnico (Sicurezza)</td>
-                            <td>Proprietario (Prima Parte)</td>
-                            <td>Token di sicurezza per la prevenzione di attacchi Cross-Site Request Forgery (CSRF).
-                                Garantisce che le richieste provengano legittimamente dal sito.</td>
-                            <td>Sessione</td>
+                            <td><code>cookieConsent</code></td>
+                            <td>Local Storage (HTML5)</td>
+                            <td>Proprietario</td>
+                            <td>Memorizza la scelta dell'utente (Accettazione o Rifiuto) per evitare di mostrare
+                                nuovamente il banner.</td>
+                            <td>Persistente (fino a cancellazione cache)</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <h3>2.2 Cookie di Terze Parti e Integrazioni</h3>
+            <p>
+                Il sito integra funzionalità e risorse fornite da terzi per migliorare l'esperienza utente e la veste
+                grafica. Tali servizi potrebbero teoricamente raccogliere dati tecnici (es. indirizzo IP) necessari
+                all'erogazione della risorsa.
+            </p>
+            <ul>
+                <li><strong>Google Fonts:</strong> Utilizzato per i caratteri tipografici (Inter, Playfair Display).
+                    L'uso delle Google API è necessario per la visualizzazione corretta dei testi.</li>
+                <li><strong>Unsplash Source:</strong> Utilizzato per caricare immagini di sfondo dinamiche ad alta
+                    risoluzione.</li>
+            </ul>
         </section>
 
+        <section>
+            <h2>3. Newsletter e Piattaforme Esterne</h2>
+            <p>
+                Il modulo di iscrizione alla newsletter presente sul sito non installa cookie di tracciamento o
+                profilazione propri. L'azione di iscrizione comporta un <strong>reindirizzamento diretto</strong> alla
+                piattaforma esterna <strong>Substack</strong>.
+            </p>
+            <p>
+                Una volta atterrati su Substack, la gestione dei cookie e della privacy ricade sotto la policy di
+                Substack Inc., indipendente da questo sito.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Gestione del Consenso</h2>
+            <p>
+                Trattandosi esclusivamente di marcatori tecnici essenziali per il funzionamento e la memoria della
+                scelta (Cookie Tecnici), il consenso preventivo non è strettamente richiesto dal Garante Privacy, ma
+                forniamo comunque lo strumento di controllo (Banner) per trasparenza.
+            </p>
+            <p>
+                L'utente può in qualsiasi momento cancellare i dati salvati tramite le funzionalità di pulizia del
+                proprio browser (cancellazione "Dati di navigazione" o "Storage").
+            </p>
+        </section>
         <section>
             <h2>3. Esclusione di Tracciamento di Terze Parti</h2>
             <p>
