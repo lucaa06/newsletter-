@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Luca Cutrono</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --surface: #0f0f0f;
+            --border: #2a2a2a;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --accent: #7F5AF0;
+            /* Updated to Purple */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 4rem 2rem;
+        }
+
+        .policy-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .back-nav {
+            margin-bottom: 3rem;
+        }
+
+        .back-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .back-nav a:hover {
+            color: var(--accent);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-info {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            padding-left: 1rem;
+            border-left: 2px solid var(--accent);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #bbb;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            list-style: none;
+            /* No default bullets */
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            color: #bbb;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        /* Custom Bullet using pseudo-element */
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .cookie-table-container {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+            background: var(--surface);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: #1a1a1a;
+            text-align: left;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            color: #ccc;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .legal-block {
+            background: rgba(127, 90, 240, 0.05);
+            /* Very subtle accent tint */
+            border: 1px solid rgba(127, 90, 240, 0.1);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        strong {
+            color: white;
+            font-weight: 600;
+        }
+
+        a.link {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+        }
+
+        a.link:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="policy-container">
+        <nav class="back-nav">
+            <a href="index.html">← HOME</a>
+        </nav>
+
+        <header>
+            <h1>Cookie Policy</h1>
+            <div class="meta-info">AGGIORNAMENTO: 27 GENNAIO 2026 • RIF. LEGISLATIVO: DIRETTIVA E-PRIVACY 2002/58/CE
+            </div>
+        </header>
+
+        <section>
+            <h2>1. Che cos'è una Cookie Policy?</h2>
+            <p>
+                La presente Cookie Policy ("Informativa sui Cookie") ha lo scopo di illustrare all'Utente le tipologie,
+                le finalità di utilizzo e le modalità di gestione/disabilitazione dei "cookie" e delle altre tecnologie
+                di tracciamento (es. Local Storage, Pixel, Web Beacon) presenti sul sito web
+                <strong>https://lucaa06.github.io</strong>.
+            </p>
+            <p>
+                Il documento è redatto in conformità alle disposizioni del Garante per la protezione dei dati personali
+                (Provvedimento "Linee guida cookie e altri strumenti di tracciamento" del 10 giugno 2021) e del
+                Regolamento UE 2016/679 (GDPR).
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Definizione Tecnica e Classificazione degli Strumenti</h2>
+
+            <h3>2.1 Cosa sono i Cookie?</h3>
+            <p>
+                I cookie sono piccoli file di testo che i siti visitati dall'utente inviano al suo terminale
+                (solitamente al browser: Chrome, Safari, Firefox, ecc.), dove vengono memorizzati per essere poi
+                ritrasmessi agli stessi siti alla successiva visita del medesimo utente.
+            </p>
+            <p>
+                Tecnicamente, un cookie è un'intestazione HTTP (<em>HTTP Header</em>) inviata dal Server al Client
+                (Browser) e viceversa, che permette di mantenere lo "stato" della sessione o di memorizzare preferenze.
+            </p>
+
+            <h3>2.2 Cosa è il Local Storage (Archiviazione Locale)?</h3>
+            <p>
+                Parallelamente ai cookie, esistono tecnologie moderne come l'<strong>HTML5 Local Storage</strong>. A
+                differenza dei cookie, i dati salvati nel Local Storage:
+            </p>
+            <ul>
+                <li>Non vengono inviati automaticamente al server ad ogni singola richiesta HTTP (riducendo il traffico
+                    dati);</li>
+                <li>Hanno una capacità di archiviazione maggiore;</li>
+                <li>Rimangono residenti sul dispositivo dell'Utente fino a cancellazione esplicita o svuotamento della
+                    cache.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Tipologie di Cookie utilizzate su questo Sito</h2>
+            <p>
+                Questo Sito adotta una politica di <strong>minimizzazione dei dati</strong> ("Privacy by Design").<br>
+                Di seguito il dettaglio tecnico degli strumenti implementati.
+            </p>
+
+            <h3>3.1 Strumenti Tecnici ed Essenziali (Technical Storage)</h3>
+            <p>
+                Questi strumenti sono <strong>strettamente necessari</strong> per il corretto funzionamento del Sito e
+                per permettere all'Utente di usufruire dei servizi richiesti (es. navigazione, salvataggio delle
+                preferenze privacy).
+            </p>
+            <div class="legal-block">
+                <strong>BASE GIURIDICA:</strong> Per l'installazione di tali cookie/storage tecnici <strong>NON è
+                    richiesto il preventivo consenso</strong> degli utenti (art. 122 codice privacy), in quanto
+                essenziali per l'erogazione del servizio.
+            </div>
+
+            <div class="cookie-table-container">
+                <style>
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 1rem 0;
+                        font-size: 0.85rem;
+                        color: #ccc;
+                    }
+
+                    th,
+                    td {
+                        border: 1px solid var(--border);
+                        padding: 0.8rem;
+                        text-align: left;
+                        vertical-align: top;
+                    }
+
+                    th {
+                        background: rgba(255, 255, 255, 0.05);
+                        color: white;
+                    }
+
+                    code {
+                        background: rgba(127, 90, 240, 0.2);
+                        padding: 2px 5px;
+                        border-radius: 4px;
+                        font-family: 'JetBrains Mono', monospace;
+                        color: white;
+                    }
+                </style>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome Tecnico</th>
+                            <th>Provider</th>
+                            <th>Tipo</th>
+                            <th>Funzione Dettagliata</th>
+                            <th>Scadenza</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>cookieConsent</code></td>
+                            <td>Proprietario</td>
+                            <td>Local Storage</td>
+                            <td>Memorizza la scelta dell'utente in merito al banner dei cookie (Accettazione o rifiuto)
+                                per impedire che il banner ricompaia a ogni cambio pagina.</td>
+                            <td>Persistente (illimitata fino a cancellazione manuale)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>3.2 Cookie di Profilazione e Marketing (NON PRESENTI)</h3>
+            <p>
+                I cookie di profilazione sono volti a creare profili relativi all'utente e vengono utilizzati al fine di
+                inviare messaggi pubblicitari in linea con le preferenze manifestate dallo stesso nell'ambito della
+                navigazione in rete.
+            </p>
+            <div class="legal-block" style="border-color: #28a745;">
+                <strong>DICHIARAZIONE DI ASSENZA:</strong><br>
+                Il Titolare dichiara che su questo Sito <strong>NON sono presenti cookie di profilazione</strong> di
+                prima parte, né di terze parti (es. Facebook Pixel, Google Ads Remarketing, Criteo, ecc.).
+                La navigazione avviene in modo anonimo rispetto agli interessi commerciali.
+            </div>
+
+            <h3>3.3 Cookie Analitici (Google Analytics e Simili)</h3>
+            <p>
+                Allo stato attuale, il Sito <strong>NON utilizza Google Analytics</strong> né altri strumenti di analisi
+                statistica che installano cookie persistenti per tracciare il comportamento degli utenti.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Gestione delle Risorse di Terze Parti</h2>
+            <p>
+                Il funzionamento del Sito si appoggia su alcune librerie esterne (CDN) per migliorare grafica e
+                prestazioni. Tali servizi potrebbero, per ragioni tecniche intrinseche ai protocolli Internet,
+                registrare l'indirizzo IP della chiamata.
+            </p>
+            <ul>
+                <li><strong>Google Fonts:</strong> Fornitore: Google Ireland Ltd. - Luogo: Irlanda/USA. Utilizzato per
+                    caricare i font (Inter, JetBrains Mono). <a href="https://policies.google.com/privacy"
+                        target="_blank" class="link">Privacy Policy Google</a>.</li>
+                <li><strong>Unsplash Source (Immagini):</strong> Fornitore: Unsplash Inc. - Luogo: Canada/USA.
+                    Utilizzato per sfondi casuali. <a href="https://unsplash.com/privacy" target="_blank"
+                        class="link">Privacy Policy Unsplash</a>.</li>
+                <li><strong>Substack (Newsletter):</strong> Fornitore: Substack Inc. - Luogo: USA. Il modulo nella
+                    sidebar è un semplice link di reindirizzamento. Nessun cookie Substack viene installato finché
+                    l'utente non clicca e atterra sul sito di Substack.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Guida Completa alla Disabilitazione (Opt-Out)</h2>
+            <p>
+                Fermo restando che i cookie tecnici sono necessari, l'Utente può decidere in qualsiasi momento di
+                bloccare, cancellare o disabilitare i cookie agendo sulle impostazioni del proprio browser.
+                Di seguito le istruzioni dettagliate per i principali software di navigazione:
+            </p>
+
+            <h3>Google Chrome</h3>
+            <ol>
+                <li>Clicca sui 3 puntini in alto a destra > <strong>Impostazioni</strong>.</li>
+                <li>Vai su <strong>Privacy e sicurezza</strong> > <strong>Cookie e altri dati dei siti</strong>.</li>
+                <li>Qui puoi selezionare "Blocca tutti i cookie" o "Cancella tutti i dati".</li>
+                <li><a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank" class="link">Guida
+                        Ufficiale Chrome</a></li>
+            </ol>
+
+            <h3>Mozilla Firefox</h3>
+            <ol>
+                <li>Clicca sul menu (3 linee) > <strong>Impostazioni</strong>.</li>
+                <li>Seleziona il pannello <strong>Privacy e sicurezza</strong>.</li>
+                <li>Nella sezione "Protezione antitracciamento avanzata", seleziona "Restrittiva" o personalizza le
+                    scelte.</li>
+                <li><a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" target="_blank"
+                        class="link">Guida Ufficiale Firefox</a></li>
+            </ol>
+
+            <h3>Apple Safari (Mac)</h3>
+            <ol>
+                <li>Vai su <strong>Safari</strong> > <strong>Preferenze</strong>.</li>
+                <li>Clicca su <strong>Privacy</strong>.</li>
+                <li>Seleziona "Blocca tutti i cookie".</li>
+                <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank"
+                        class="link">Guida Ufficiale Safari</a></li>
+            </ol>
+
+            <h3>Apple Safari (iPhone/iPad)</h3>
+            <ol>
+                <li>Vai su <strong>Impostazioni</strong> del dispositivo > <strong>Safari</strong>.</li>
+                <li>Scorri fino alla sezione "Privacy e Sicurezza".</li>
+                <li>Attiva l'interruttore <strong>Blocca tutti i cookie</strong>.</li>
+            </ol>
+
+            <h3>Microsoft Edge</h3>
+            <ol>
+                <li>Clicca sui 3 puntini > <strong>Impostazioni</strong> > <strong>Cookie e autorizzazioni
+                        sito</strong>.</li>
+                <li>Gestisci ed elimina cookie e dati del sito.</li>
+                <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+                        target="_blank" class="link">Guida Ufficiale Edge</a></li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>6. Diritti dell'Utente e Aggiornamenti</h2>
+            <p>
+                L'Utente ha il diritto di richiedere informazioni sui cookie installati e può esercitare i diritti
+                previsti dal GDPR contattando il Titolare all'indirizzo: <strong><a
+                        href="mailto:lucacutrono06@gmail.com" class="link">lucacutrono06@gmail.com</a></strong>.
+            </p>
+            <p>
+                La presente Cookie Policy può subire variazioni nel tempo, anche connesse all'eventuale entrata in
+                vigore di nuove normative di settore, all'aggiornamento o erogazione di nuovi servizi ovvero ad
+                intervenute innovazioni tecnologiche. Si invita pertanto l'utente a consultare periodicamente questa
+                pagina.
+            </p>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
